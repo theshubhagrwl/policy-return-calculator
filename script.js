@@ -20,12 +20,19 @@ function calc() {
         t1 += p;
       }
     }
+    // console.log(t1);
+    // document.querySelector(
+    //   ".result"
+    // ).innerHTML = `After <b>${pyrs} years</b> with <b>${inte}%</b> interest you will have <b>₹${t1}</b>`;
   }
 
+  // if (unpyrs != "") {
   for (let i = 0; i < unpyrs; i++) {
     t1 += (inte / 100) * t1;
   }
 
+  // console.log("Final wala", t1);
+  // }
   document.querySelector(
     ".result"
   ).innerHTML = `After <b>${pyrs} years</b> with <b>${inte}%</b> interest you will have <b>₹${t1.toFixed(
@@ -38,3 +45,6 @@ premium.addEventListener("change", calc);
 pYrs.addEventListener("change", calc);
 interest.addEventListener("change", calc);
 unpYrs.addEventListener("input", calc);
+submit.addEventListener("click", function (e) {
+  e.preventDefault();
+});
