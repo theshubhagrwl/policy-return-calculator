@@ -79,6 +79,8 @@ button {
   margin-top: 20px;
   width: 100%;
 }
+/*# sourceMappingURL=styles.css.map */
+
 
 /* ============= Animation background ========= */
 .background {
@@ -152,13 +154,4 @@ button {
     transform: scale(20) rotate(960deg) translate(-50%, -50%);
     opacity: 0;
   }
-}
-
-footer {
-  position: absolute;
-  bottom: 0;
-  color: #777;
-  width: 100%;
-  text-align: center;
-  padding: 10px 0px;
 }
